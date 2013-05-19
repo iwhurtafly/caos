@@ -1,0 +1,87 @@
+// Place all the styles related to the Caos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#page-header {
+	float : left ;
+}
+
+#page-header-right {
+	float : right ;
+}
+
+#clear-block {
+    clear : both ;
+}
+
+#page-menu {
+	float : left ;
+}
+
+h1 {
+  margin: 50;
+  font-family: inherit;
+  font-weight: bold;
+  color: inherit;
+  text-rendering: optimizelegibility;
+}
+
+h2 {
+  margin: 100;
+  font-family: inherit;
+  color: inherit;
+  text-rendering: optimizelegibility;
+}
+
+
+h1 {
+  font-size: 124px;
+  line-height: 0px;
+  color:#FFFFFF;
+}
+
+h2 {
+  font-size: 30px;
+  padding-left: 30px;
+  padding-bottom: 0px;
+  line-height: 35px;
+  color:#EEE8AA;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 35px;
+  color:#EEE8AA;
+}
+
+p {
+  font-size: 11px;
+  color: #FFFFFF;
+}
+
+#sns .sns {
+    text-align:right;
+    color:#FFFFFF;
+	font-size:13px;
+}
+
+a { 
+    text-decoration: none;
+}
+a:link { color: #EEE8AA; }
+a:visited { color: #EEE8AA; }
+a:active { color: #ff0000; }
+a:hover { color: red; }
+
+a:hover img {
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+}
+
+p.footer-right {
+  font-size: 13px;
+  float: right;
+  color:#FFFFFF;
+}
+
+
