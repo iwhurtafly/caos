@@ -60,11 +60,11 @@ p {
 }
 #container {
   margin: 0 auto;
-  width: 800px;
+  width: 1200px;
 }
 .section {
 border-bottom: 3px solid #ccc;
-width:800px;padding:20px;background:#FFFFFF;
+width:1050px;padding:70px;background:#FFFFFF;
 background:rgba(0,0,0,.7);
 -webkit-border-radius:10px;
 -moz-border-radius:10px;
@@ -131,17 +131,25 @@ box-shadow:0 1px 4px rgba(0,0,0,0.3);
 	
 	<div id="clear-block">
 	</div>
-	
+
+<br/>	
 
 	<div id="page-menu" style="float:left;">
-	    <h2><a href="home"><%= image_tag("menu/01home.png", :height => '40', :width => '274') %></a></h2>
-	    <h2><a href="#about"><%= image_tag("menu/02about.png", :height => '40', :width => '274') %></a></h2>
-	    <h2><a href="#services"><%= image_tag("menu/03services.png", :height => '40', :width => '274') %></a></h2>
-	    <h2><a href="#stylist"><%= image_tag("menu/04stylist.png", :height => '40', :width => '274') %></a></h2>
-	    <h2><a href="#gallery"><%= image_tag("menu/05gallery.png", :height => '40', :width => '274') %></a></h2>
-	    <h2><a href="#blog"><%= image_tag("menu/06blog.png", :height => '40', :width => '274') %></a></h2>
-	    <h2><a href="#links"><%= image_tag("menu/07links.png", :height => '40', :width => '274') %></a></h2>
-	    <h2><a href="#contact"><%= image_tag("menu/08contact.png", :height => '40', :width => '274') %></a></h2>
+	    <a href="home"><%= image_tag("menu/01home.png", :height => '40', :width => '274') %></a>
+	<br/>
+	    <a href="#about"><%= image_tag("menu/02about.png", :height => '40', :width => '274') %></a>
+    <br/>
+	    <a href="#services"><%= image_tag("menu/03services.png", :height => '40', :width => '274') %></a>
+    <br/>
+	    <a href="#stylist"><%= image_tag("menu/04stylist.png", :height => '40', :width => '274') %></a>
+    <br/>
+	    <a href="#gallery"><%= image_tag("menu/05gallery.png", :height => '40', :width => '274') %></a>
+    <br/>
+	    <a href="#blog"><%= image_tag("menu/06blog.png", :height => '40', :width => '274') %></a>
+    <br/>
+	    <a href="#links"><%= image_tag("menu/07links.png", :height => '40', :width => '274') %></a>
+    <br/>
+	    <a href="#contact"><%= image_tag("menu/08contact.png", :height => '40', :width => '274') %></a>
 
     </div>
 
@@ -182,59 +190,56 @@ box-shadow:0 1px 4px rgba(0,0,0,0.3);
 
 	<div id="container">
 	  <div class="section" id="about">
-	    <h3>*** About ***</h3>
+		<h3>
+	    <%= image_tag("menu/02about.png", :height => '40', :width => '274') %>
+		</h3>
 		<p>1999年9月15日OPEN。<br>
 		以来、コンセプトを”Avangard”とおき、<br>
 		スタッフ全員が確かな知識と技術力で<br>
 		お客様一人一人に全力を尽くしていくと共に、<br>
 		常にトータル的な革新さをプロデュースしていきたいと考えています。<br>
 		<br>
-		<font color="#20B2AA">OPEN：<br>
+		<font color="#EEE8AA">OPEN：<br>
 		11am - 9pm ：Weekday<br>
 		10am - 7pm ：Sunday & Holiday<br>
-		Closed on Tuesday.</font><br>
+		Closed on Tuesday & first and third Monday of each month.</font><br>
 
-		<br>
-		---------<br>
-		---------<br>
-		---------<br>
-		---------<br>
-		---------<br>
-		---------<br>
+		<br/>
+		
 		</p>
 	  </div>
 	  <div class="section" id="services">
-		<h3>*** Services ***</h3>
+		<h3>
+	    <%= image_tag("menu/03services.png", :height => '40', :width => '274') %>
+		</h3>
 		<ul>
-			<li>CUT（シャンプー、ブロー込）<font color="#20B2AA">¥4,725</font></li>
+			<li>CUT（シャンプー、ブロー込）<font color="#EEE8AA">¥4,725</font></li>
 
-			<li>PERM（cut、シャンプー、ブロー込）<font color="#20B2AA">¥8,400〜</font>　※スタイルによって料金が異なります。</li>
+			<li>PERM（cut、シャンプー、ブロー込）<font color="#EEE8AA">¥8,400〜</font>　※スタイルによって料金が異なります。</li>
 
-			<li>COLOR（cut別）<font color="#20B2AA">¥4,200〜</font>　※カラーの入れ方（メッシュ、ダブルカラー、etc）によって料金が異なります。</li>
+			<li>COLOR（cut別）<font color="#EEE8AA">¥4,200〜</font>　※カラーの入れ方（メッシュ、ダブルカラー、etc）によって料金が異なります。</li>
 
-			<li>STUDENT DISCOUNT（シャンプー、ブロー込）<font color="#20B2AA">¥3,885</font>　※中学・高校・大学・専門学校生</li>
+			<li>STUDENT DISCOUNT（シャンプー、ブロー込）<font color="#EEE8AA">¥3,885</font>　※中学・高校・大学・専門学校生</li>
 
-			<li>TREATMENT　<font color="#20B2AA">¥3,150〜</font>　※種類（アロマトリートメント・セリエエクスパート）によって料金が異なります。</li>		
-			<li>縮毛矯正（cut、シャンプー、ブロー込）　<font color="#20B2AA">¥19,950〜</font></li>		
+			<li>TREATMENT　<font color="#EEE8AA">¥3,150〜</font>　※種類（アロマトリートメント・セリエエクスパート）によって料金が異なります。</li>		
+			<li>縮毛矯正（cut、シャンプー、ブロー込）　<font color="#EEE8AA">¥19,950〜</font></li>		
 
-			<li>エクステンション / ドレッド　<font color="#20B2AA">ask</font></li>		
+			<li>エクステンション / ドレッド　<font color="#EEE8AA">ask</font></li>		
 
-			<li>SET<font color="#20B2AA">　¥4,200</font></li>
+			<li>SET<font color="#EEE8AA">　¥4,200</font></li>
 
-			<li>ブロー<font color="#20B2AA">　¥1,050</font></li>
+			<li>ブロー<font color="#EEE8AA">　¥1,050</font></li>
 
-			<li>着付<font color="#20B2AA">　¥6,300</font> ※要予約</li>
+			<li>着付<font color="#EEE8AA">　¥6,300</font> ※要予約</li>
 
-			<li>---------<font color="#20B2AA">　¥X,XXX</font></li>
-			<li>---------<font color="#20B2AA">　¥X,XXX</font></li>
-			<li>---------<font color="#20B2AA">　¥X,XXX</font></li>
-			<li>---------<font color="#20B2AA">　¥X,XXX</font></li>
-
+            <br/>
 
 		</ul>
 	  </div>
 	  <div class="section" id="stylist">
-		<h3>*** Stylist ***</h3>
+		<h3>
+	    <%= image_tag("menu/04stylist.png", :height => '40', :width => '274') %>
+		</h3>
 		
         <%= image_tag("facebook_mustbedeleted/higuchi-san.jpg", :alt => "", :height => '130', :width => '130') %>
 		<a href='http://www.facebook.com/morikazu.higuchi' target='_blank'>
@@ -261,7 +266,9 @@ box-shadow:0 1px 4px rgba(0,0,0,0.3);
 		
 	  </div>
 	  <div class="section" id="gallery">
-		<h3>*** Gallery ***</h3>			
+		<h3>
+	    <%= image_tag("menu/05gallery.png", :height => '40', :width => '274') %>
+		</h3>
 			<a class="fancybox" rel="gallery1" href="/assets/gallery/flyer_0001.jpg" title="">
 	        <%= image_tag("gallery/flyer_0001.jpg", :alt => "", :height => '180', :width => '180') %>
 		    </a>
@@ -321,22 +328,26 @@ box-shadow:0 1px 4px rgba(0,0,0,0.3);
 	</script>
 
 	  <div class="section" id="blog">
-	    <h3>*** Blog ***</h3>
+		<h3>
+	    <%= image_tag("menu/06blog.png", :height => '40', :width => '274') %>
+		</h3>
 		<p>CAOSブログ-->><a href="http://blog.caos.jp" target='_blank'>コチラ</a></p>
 	  </div>
 	
 	  <div class="section" id="links">
-	    <h3>*** Links ***</h3>
+		<h3>
+	    <%= image_tag("menu/07links.png", :height => '40', :width => '274') %>
+		</h3>
 	
 	    <p>
-		<font color="#20B2AA">Shop  ：　
+		Shop  ：　
 		<a href='http://caospa.jp' target='_blank'>
 	      <%= image_tag("links/caospa.gif", :alt => "", :height => '31', :width => '96') %>
         </a></font>
         </p>
 
 	    <p>
-		<font color="#20B2AA">Label  ：　
+		Label  ：　
 		<a href='http://www.sonzairecords.com' target='_blank'>
 	      SONZAI, 
         </a></font>
@@ -351,7 +362,7 @@ box-shadow:0 1px 4px rgba(0,0,0,0.3);
         </p>
 
 	    <p>
-		<font color="#20B2AA">Band  ：　
+		Band  ：　
 		<a href='http://www.toe.st' target='_blank'>
 	      toe, 
         </a></font>
@@ -370,14 +381,14 @@ box-shadow:0 1px 4px rgba(0,0,0,0.3);
         </p>
 
 	    <p>
-		<font color="#20B2AA">Music  ：　
+		Music  ：　
 		<a href='http://dotlinecircle.com' target='_blank'>
 	      dotlinecircle 
         </a></font>
         </p>
 
 	    <p>
-		<font color="#20B2AA">Design：　
+		Design：　
 		<a href='http://nssgraphica.com' target='_blank'>
 	      NSSGRAPHICA 
         </a></font>
@@ -390,11 +401,13 @@ box-shadow:0 1px 4px rgba(0,0,0,0.3);
 	  </div>
 	
 	  <div class="section" id="contact">
-	    <h3>*** Contact ***</h3>
+		<h3>
+	    <%= image_tag("menu/08contact.png", :height => '40', :width => '274') %>
+		</h3>
 		<p>tel/fax 011-614-7535</p>
 		<p>札幌市中央区南1条西19丁目　エスターロワイヤルビル2F</p>
 
-		<iframe width="760" height="450" frameborder="10" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.jp/maps?f=q&amp;source=s_q&amp;hl=ja&amp;geocode=&amp;q=%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%97%EF%BC%91%E6%9D%A1%E8%A5%BF%EF%BC%91%EF%BC%99%E4%B8%81%E7%9B%AE+%EF%BC%A3%EF%BC%A1%EF%BC%AF%EF%BC%B3%EF%BC%B0%EF%BC%A1&amp;aq=0&amp;oq=%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%971%E6%9D%A1%E8%A5%BF19%E4%B8%81%E7%9B%AE+caos&amp;sll=43.056029,141.328157&amp;sspn=0.002242,0.004544&amp;brcurrent=3,0x5f0b2994b799e711:0x110c71367f0adace,0&amp;ie=UTF8&amp;hq=%EF%BC%A3%EF%BC%A1%EF%BC%AF%EF%BC%B3%EF%BC%B0%EF%BC%A1&amp;hnear=%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%97%EF%BC%91%E6%9D%A1%E8%A5%BF%EF%BC%91%EF%BC%99%E4%B8%81%E7%9B%AE&amp;ll=43.055314,141.328696&amp;spn=0.006295,0.006295&amp;t=m&amp;output=embed&iwloc=B"></iframe><br /><a href="https://maps.google.co.jp/maps?f=q&amp;source=embed&amp;hl=ja&amp;geocode=&amp;q=%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%97%EF%BC%91%E6%9D%A1%E8%A5%BF%EF%BC%91%EF%BC%99%E4%B8%81%E7%9B%AE+%EF%BC%A3%EF%BC%A1%EF%BC%AF%EF%BC%B3%EF%BC%B0%EF%BC%A1&amp;aq=0&amp;oq=%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%971%E6%9D%A1%E8%A5%BF19%E4%B8%81%E7%9B%AE+caos&amp;sll=43.056029,141.328157&amp;sspn=0.002242,0.004544&amp;brcurrent=3,0x5f0b2994b799e711:0x110c71367f0adace,0&amp;ie=UTF8&amp;hq=%EF%BC%A3%EF%BC%A1%EF%BC%AF%EF%BC%B3%EF%BC%B0%EF%BC%A1&amp;hnear=%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%97%EF%BC%91%E6%9D%A1%E8%A5%BF%EF%BC%91%EF%BC%99%E4%B8%81%E7%9B%AE&amp;ll=43.055314,141.328696&amp;spn=0.006295,0.006295&amp;t=m" style="color:#0000FF;text-align:left" target='_blank'><font color="#20B2AA">Google Mapへ</font></a>
+		<iframe width="1040" height="450" frameborder="10" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.jp/maps?f=q&amp;source=s_q&amp;hl=ja&amp;geocode=&amp;q=%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%97%EF%BC%91%E6%9D%A1%E8%A5%BF%EF%BC%91%EF%BC%99%E4%B8%81%E7%9B%AE+%EF%BC%A3%EF%BC%A1%EF%BC%AF%EF%BC%B3%EF%BC%B0%EF%BC%A1&amp;aq=0&amp;oq=%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%971%E6%9D%A1%E8%A5%BF19%E4%B8%81%E7%9B%AE+caos&amp;sll=43.056029,141.328157&amp;sspn=0.002242,0.004544&amp;brcurrent=3,0x5f0b2994b799e711:0x110c71367f0adace,0&amp;ie=UTF8&amp;hq=%EF%BC%A3%EF%BC%A1%EF%BC%AF%EF%BC%B3%EF%BC%B0%EF%BC%A1&amp;hnear=%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%97%EF%BC%91%E6%9D%A1%E8%A5%BF%EF%BC%91%EF%BC%99%E4%B8%81%E7%9B%AE&amp;ll=43.055314,141.328696&amp;spn=0.006295,0.006295&amp;t=m&amp;output=embed&iwloc=B"></iframe><br /><a href="https://maps.google.co.jp/maps?f=q&amp;source=embed&amp;hl=ja&amp;geocode=&amp;q=%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%97%EF%BC%91%E6%9D%A1%E8%A5%BF%EF%BC%91%EF%BC%99%E4%B8%81%E7%9B%AE+%EF%BC%A3%EF%BC%A1%EF%BC%AF%EF%BC%B3%EF%BC%B0%EF%BC%A1&amp;aq=0&amp;oq=%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%971%E6%9D%A1%E8%A5%BF19%E4%B8%81%E7%9B%AE+caos&amp;sll=43.056029,141.328157&amp;sspn=0.002242,0.004544&amp;brcurrent=3,0x5f0b2994b799e711:0x110c71367f0adace,0&amp;ie=UTF8&amp;hq=%EF%BC%A3%EF%BC%A1%EF%BC%AF%EF%BC%B3%EF%BC%B0%EF%BC%A1&amp;hnear=%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%97%EF%BC%91%E6%9D%A1%E8%A5%BF%EF%BC%91%EF%BC%99%E4%B8%81%E7%9B%AE&amp;ll=43.055314,141.328696&amp;spn=0.006295,0.006295&amp;t=m" style="color:#0000FF;text-align:left" target='_blank'><font color="#EEE8AA">Google Mapへ</font></a>
 		
 
 	  </div>
