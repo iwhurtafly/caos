@@ -28,36 +28,7 @@ ul {
 p {
   margin-bottom: 20px;
 }
-#nav {
-  left: 20px;
-  list-style: none;
-  position: fixed;
-  top: 200px;
-  float : left ;
-}
-#nav li {
-  margin-bottom: 20px;
-}
-#nav a {
-  background: #black;
-  color: #EEE8AA;
-  display: block;
-  font-size: 30px;
-  padding: 5px 10px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-#nav a:hover {
-  background: #FFFFFF;
-  color: red;
-}
-#nav .current a {
-  background: #666;
-  color: #ededed;
-}
-.current {
-  background: red;
-}
+
 #container {
   margin: 0 auto;
   width: 900px;
@@ -157,7 +128,7 @@ box-shadow:0 1px 4px rgba(0,0,0,0.3);
 	<div id="maximage">
 
 	    <div class="first-item">
-			<%= image_tag("background.jpg", :alt => "") %>
+			<%= image_tag("background.jpg", :alt => "", :height => '840', :width => '1400') %>
 	    </div>	
 
 
@@ -258,13 +229,8 @@ box-shadow:0 1px 4px rgba(0,0,0,0.3);
 	    <%= image_tag("insta.png", :height => '60', :width => '60') %>
         </a>
 		<p>Chief: Syouta Suzuki</p>
-		
-		
-        <%= image_tag("facebook_mustbedeleted/kana-san1.jpg", :alt => "", :height => '130', :width => '130') %>		
-		<p>Assistant: Kana</p>
-		
-        <%= image_tag("facebook_mustbedeleted/kana-san2.jpg", :alt => "", :height => '130', :width => '130') %>		
-		<p>Assistant: Kana</p>
+	    <%= image_tag("facebook_mustbedeleted/kana-san.jpg", :alt => "", :height => '130', :width => '130') %>		
+		<p>Assistant: Kana Sato</p>
 
 		
 	  </div>
