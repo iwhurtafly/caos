@@ -22,6 +22,7 @@ ul {
 }
 p {
   margin-bottom: 20px;
+  font-size: 15px;
 }
 
 #container {
@@ -30,12 +31,13 @@ p {
 }
 .section {
 margin: 0px auto;
-width:800px;border-bottom: 3px solid #ccc;
+width:800px;border: 1px solid #ccc;
 padding:50px;background:#FFFFFF;
 background:rgba(0,0,0,.7);
 -webkit-border-radius:10px;
 -moz-border-radius:10px;
 border-radius:10px;
+margin-top:30px;
 margin-bottom:40px;
 -webkit-box-shadow:0 1px 4px rgba(0,0,0,0.3);
 -moz-box-shadow:0 1px 4px rgba(0,0,0,0.3);
@@ -73,19 +75,19 @@ box-shadow:0 1px 4px rgba(0,0,0,0.3);
 		  <td width="200">
 		  </td>
           <td><%= image_tag("caos_logo.png") %></td>
-		  <td width="70">
+		  <td width="50">
 		  </td>
-          <td><p><font color="#FFFFFF">Follow us</font></p>
+          <td><p><font color="#EEE8AA">Follow us!</font></p>
           </td>
 		  <td>
 			<span>
 			<a class='facebook' href='http://www.facebook.com/pages/Unisex-hairmake-Caos/446876805356728' target='_blank'>
-		    <%= image_tag("facebook.png", :height => '60', :width => '60') %>
+		    <%= image_tag("facebook.png", :height => '80', :width => '80') %>
 		    </a>
 		    </span>
 			<span>
 			<a class='facebook' href='https://twitter.com/CAOS_1999' target='_blank'>		
-		    <%= image_tag("twitter.png", :height => '60', :width => '60') %>
+		    <%= image_tag("twitter.png", :height => '80', :width => '80') %>
 	        </a>
      	    </span>
 		  </td>
@@ -241,9 +243,6 @@ $(function(){
 		<a href='http://www.facebook.com/morikazu.higuchi' target='_blank'>
 	    <%= image_tag("facebook.png", :height => '60', :width => '60') %>
 	    </a>
-		<a class='facebook' href='https://twitter.com/byebyebw' target='_blank'>		
-	    <%= image_tag("twitter.png", :height => '60', :width => '60') %>
-        </a>
 		<p>Owner: Morikazu Higuchi</p>
 		
         <%= image_tag("facebook_mustbedeleted/syouta-san.jpg", :alt => "", :height => '130', :width => '130') %>
