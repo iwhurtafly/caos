@@ -1,0 +1,43 @@
+<h1>CAOS contact</h1>
+<section class='primary-content'>
+<form accept-charset="UTF-8" action="/contact" class="new_contact" id="new_contact" method="post">
+
+	    <a href="caos/home" id="home"><%= image_tag("menu/01home.png", :height => '40', :width => '274') %>CAOSのHPへ戻る</a>
+	<br/>
+	<br/>
+	<br/>
+
+<%= form_for @contact, url: contact_path do |form| %>
+
+
+		<p>ご質問やご要望がある方は以下のフォームからお尋ねください。</p>
+
+<%#エラー処理をココに入れる。（cbのソースを見る） %>
+
+		
+		<div id='input-form'>
+		<dl>
+		<dt>
+		<p>お名前*</p>
+		</dt>
+		<dd><input id="contact_name" name="contact[name]" required="required" size="55" type="text" /></dd>
+		<dt>
+		<p>Emailアドレス*</p>
+		</dt>
+		<dd><input id="contact_email" name="contact[email]" required="required" size="55" type="email" /></dd>
+		
+		<dt><p>お電話番号</p></dt>
+		<dd><input id="contact_tel" name="contact[tel]" size="55" type="text" /></dd>
+		
+		<dt>
+		<p>Text*</p>
+		</dt>
+		<dd><textarea cols="40" id="contact_text" name="contact[text]" required="required" rows="8">
+		</textarea></dd>
+		</dl>
+		<div class='buttons'><input class="button" name="commit" type="submit" value="送信する" /></div>
+		</div>
+		
+	</section>
+
+<% end %>

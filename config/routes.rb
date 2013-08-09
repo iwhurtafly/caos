@@ -1,19 +1,30 @@
 Caos::Application.routes.draw do
-  get "caos/home"
 
-  get "caos/about"
+  #for production
+  #root to: "caos#home"
 
-  get "caos/services"
+  get "caos/home" => "caos#home"
+  post "caos/home"
 
-  get "caos/stylist"
+  resource :contact, only: %w(show create)
+  #get "contact" => "contacts#show"
 
-  get "caos/gallery"
+  
 
-  get "caos/blog"
 
-  get "caos/link"
+  #get "caos/about"
 
-  get "caos/contact"
+  #get "caos/services"
+
+  #get "caos/stylist"
+
+  #get "caos/gallery"
+
+  #get "caos/blog"
+
+  #get "caos/link"
+
+  #get "caos/contact"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
