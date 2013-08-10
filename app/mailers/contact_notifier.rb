@@ -4,6 +4,7 @@ class ContactNotifier < ActionMailer::Base
 
   def create(contact)
     @contact = contact
-    mail to: ENV['CAOS_MAIL_TO'], subject: "Webサイトからの問い合わせ [#{contact.name}]", body:"TESTです。"
+    mail to: ENV['CAOS_MAIL_TO'], subject: "Webサイトからの問い合わせ [#{contact.name}]様", 
+    body:"メールアドレス： #{contact.email} 電話番号： #{contact.tel} メモ： #{contact.text}"
   end
 end

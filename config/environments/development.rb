@@ -34,4 +34,8 @@ Caos::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+  
+  #e-mail test
+  config.action_mailer.delivery_method = :letter_opener
+  
 end

@@ -1,21 +1,25 @@
 <h1>CAOS contact</h1>
 
 
-<section class='input-confirm'>
-
-  <p> 送信内容 </p>
-
-	<div id='input-form'>
-	<dl>
-	<dt>
-	<p>	<%= @contact.name %></p>
-	<p>	<%= @contact.email %></p>
-	<p>	<%= @contact.tel %></p>
-	<p>	<%= @contact.text %></p>
-	</dt>
-
-</dl>
+<div id="container">
+  <div class="section">
+    <dl>
+      <dt>
+        <p> 以下の内容にて送信されました。<br>
+        こちらから折り返しご連絡させて頂きます。
+        </p>
+      </dt>
+    </dl>
+    <dl>
+	  <dt>
+	    <p>お名前：	<%= @contact.name %></p>
+	    <p>メールアドレス： <%= @contact.email %></p>
+	    <p>お電話番号： <%= @contact.tel %></p>
+	    <p>メモ： <%= @contact.text %></p>
+	  </dt>
+    </dl>
+  </div>
+  <div id="page-menu" style="float:left;">
+	  <a href="caos/home" id="home"><%= image_tag("menu/01home.png", :height => '40', :width => '274') %>CAOSのHPへ戻る</a>
+  </div>
 </div>
-
-
-
