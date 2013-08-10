@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 class ContactNotifier < ActionMailer::Base
-  #default from: ENV['CAOS_MAIL_FR'] ##we should use this line on production
-  default from: 'hayab2s@gmail.com'
+  default from: ENV['CAOS_MAIL_FR']
 
   def create(contact)
     @contact = contact
