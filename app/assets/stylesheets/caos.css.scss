@@ -2,6 +2,71 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body {
+  color: #222;
+  font: 12px/20px Helvetica, Arial, sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #FFFFFF;
+}
+
+p.footer-right {
+  font-size: 13px;
+  float: right;
+  color:#FFFFFF;
+}
+
+#container {
+  width: 900px;
+  margin: 0px auto;
+}
+.section {
+margin: 0px auto;
+width:800px;border: 1px solid #ccc;
+padding:50px;background:#FFFFFF;
+background:rgba(0,0,0,.7);
+-webkit-border-radius:10px;
+-moz-border-radius:10px;
+border-radius:10px;
+margin-top:30px;
+margin-bottom:40px;
+-webkit-box-shadow:0 1px 4px rgba(0,0,0,0.3);
+-moz-box-shadow:0 1px 4px rgba(0,0,0,0.3);
+box-shadow:0 1px 4px rgba(0,0,0,0.3);
+}
+.section p {
+  color: #FFFFFF;
+  padding-left: 30px;
+  line-height: 35px;
+  font-size: 15px;
+}
+.section p:last-child {
+  margin-bottom: 0;
+}
+.section li {
+  color: #FFFFFF;
+  padding-left: 30px;
+  line-height: 35px;
+  font-size: 15px;
+  list-style:outside none;
+}
+.buttons {
+  padding-left: 280px;
+}
+
+#maximage2 {
+}
+.video {
+}
+
 #page-header {
 	float : center ;
 }
@@ -24,6 +89,9 @@ h1 {
   font-weight: bold;
   color: inherit;
   text-rendering: optimizelegibility;
+  font-size: 124px;
+  line-height: 0px;
+  color:#FFFFFF;
 }
 
 h2 {
@@ -31,16 +99,6 @@ h2 {
   font-family: inherit;
   color: inherit;
   text-rendering: optimizelegibility;
-}
-
-
-h1 {
-  font-size: 124px;
-  line-height: 0px;
-  color:#FFFFFF;
-}
-
-h2 {
   font-size: 30px;
   padding-left: 30px;
   padding-bottom: 0px;
@@ -52,17 +110,6 @@ h3 {
   font-size: 20px;
   line-height: 35px;
   color:#EEE8AA;
-}
-
-p {
-  font-size: 11px;
-  color: #FFFFFF;
-}
-
-#sns .sns {
-    text-align:right;
-    color:#FFFFFF;
-	font-size:13px;
 }
 
 a { 
@@ -77,11 +124,3 @@ a:hover img {
 	opacity: 0.6;
 	filter: alpha(opacity=60);
 }
-
-p.footer-right {
-  font-size: 13px;
-  float: right;
-  color:#FFFFFF;
-}
-
-

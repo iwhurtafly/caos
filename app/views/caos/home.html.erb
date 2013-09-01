@@ -168,13 +168,13 @@ $(function(){
 	    <%= image_tag("menu/04stylist.png", :height => '40', :width => '274') %>
 		</h3>
 		
-        <%= image_tag("facebook_mustbedeleted/higuchi-san.jpg", :alt => "", :height => '130', :width => '130') %>
+        <%= image_tag("stylist/higuchi-san.jpg", :alt => "", :height => '130', :width => '130') %>
 		<a href='http://www.facebook.com/morikazu.higuchi' target='_blank'>
 	    <%= image_tag("facebook.png", :height => '60', :width => '60') %>
 	    </a>
 		<p>Owner: Morikazu Higuchi</p>
 		
-        <%= image_tag("facebook_mustbedeleted/syouta-san.jpg", :alt => "", :height => '130', :width => '130') %>
+        <%= image_tag("stylist/syouta-san.jpg", :alt => "", :height => '130', :width => '130') %>
 		<a class='facebook' href='http://www.facebook.com/syouta.suzuki.90' target='_blank'>
 	    <%= image_tag("facebook.png", :height => '60', :width => '60') %>
 	    </a>
@@ -182,7 +182,7 @@ $(function(){
 	    <%= image_tag("insta.png", :height => '60', :width => '60') %>
         </a>
 		<p>Chief: Syouta Suzuki</p>
-	    <%= image_tag("facebook_mustbedeleted/kana-san.jpg", :alt => "", :height => '130', :width => '130') %>		
+	    <%= image_tag("stylist/kana-san.jpg", :alt => "", :height => '130', :width => '130') %>		
 		<p>Assistant: Kana Sato</p>
 
 
@@ -197,58 +197,42 @@ $(function(){
 		<h3>
 	    <%= image_tag("menu/05gallery.png", :height => '40', :width => '274') %>
 		</h3>
-			<a class="fancybox" rel="gallery1" href="/assets/gallery/flyer_0001.jpg" title="">
-	        <%= image_tag("gallery/flyer_0001.jpg", :alt => "", :height => '180', :width => '180') %>
-		    </a>
-			<a class="fancybox" rel="gallery1" href="/assets/gallery/flyer_0002.jpg" title="">
-	        <%= image_tag("gallery/flyer_0002.jpg", :alt => "", :height => '180', :width => '180') %>
-		    </a>
-			<a class="fancybox" rel="gallery1" href="/assets/gallery/flyer_0003.jpg" title="">
-	        <%= image_tag("gallery/flyer_0003.jpg", :alt => "", :height => '180', :width => '180') %>
-		    </a>
-			<a class="fancybox" rel="gallery1" href="/assets/gallery/flyer_0004.jpg" title="">
-	        <%= image_tag("gallery/flyer_0004.jpg", :alt => "", :height => '180', :width => '180') %>
-		    </a>
-			<a class="fancybox" rel="gallery1" href="/assets/gallery/flyer_0005.jpg" title="">
-	        <%= image_tag("gallery/flyer_0005.jpg", :alt => "", :height => '180', :width => '180') %>
-		    </a>
-			<a class="fancybox" rel="gallery1" href="/assets/gallery/flyer_0006.jpg" title="">
-	        <%= image_tag("gallery/flyer_0006.jpg", :alt => "", :height => '180', :width => '180') %>
-		    </a>
-			<a class="fancybox" rel="gallery1" href="/assets/gallery/flyer_0007.jpg" title="">
-	        <%= image_tag("gallery/flyer_0007.jpg", :alt => "", :height => '180', :width => '180') %>
-		    </a>
-			<a class="fancybox" rel="gallery1" href="/assets/gallery/flyer_0008.jpg" title="">
-	        <%= image_tag("gallery/flyer_0008.jpg", :alt => "", :height => '180', :width => '180') %>
-		    </a>
-			<a class="fancybox" rel="gallery1" href="/assets/gallery/flyer_0009.jpg" title="">
-	        <%= image_tag("gallery/flyer_0009.jpg", :alt => "", :height => '180', :width => '180') %>
-		    </a>
-			<a class="fancybox" rel="gallery1" href="/assets/gallery/flyer_0010.jpg" title="">
-	        <%= image_tag("gallery/flyer_0010.jpg", :alt => "", :height => '180', :width => '180') %>
-		    </a>
+		
+		<%= link_to(image_tag("gallery/flyer/flyer_0001.jpg", :alt => "", :height => '180', :width => '180'), "/assets/gallery/flyer/flyer_0001.jpg", :class =>"fancybox", :rel => "gallery1") %>
+		<%= link_to(image_tag("gallery/flyer/flyer_0002.jpg", :alt => "", :height => '180', :width => '180'), "/assets/gallery/flyer/flyer_0002.jpg", :class =>"fancybox", :rel => "gallery1") %>
+		<%= link_to(image_tag("gallery/flyer/flyer_0003.jpg", :alt => "", :height => '180', :width => '180'), "/assets/gallery/flyer/flyer_0003.jpg", :class =>"fancybox", :rel => "gallery1") %>
+		<%= link_to(image_tag("gallery/flyer/flyer_0004.jpg", :alt => "", :height => '180', :width => '180'), "/assets/gallery/flyer/flyer_0004.jpg", :class =>"fancybox", :rel => "gallery1") %>
+		<%= link_to(image_tag("gallery/flyer/flyer_0005.jpg", :alt => "", :height => '180', :width => '180'), "/assets/gallery/flyer/flyer_0005.jpg", :class =>"fancybox", :rel => "gallery1") %>
+		<%= link_to(image_tag("gallery/flyer/flyer_0006.jpg", :alt => "", :height => '180', :width => '180'), "/assets/gallery/flyer/flyer_0006.jpg", :class =>"fancybox", :rel => "gallery1") %>
+		<%= link_to(image_tag("gallery/flyer/flyer_0007.jpg", :alt => "", :height => '180', :width => '180'), "/assets/gallery/flyer/flyer_0007.jpg", :class =>"fancybox", :rel => "gallery1") %>
+		<%= link_to(image_tag("gallery/flyer/flyer_0008.jpg", :alt => "", :height => '180', :width => '180'), "/assets/gallery/flyer/flyer_0008.jpg", :class =>"fancybox", :rel => "gallery1") %>
+		<%= link_to(image_tag("gallery/flyer/flyer_0009.jpg", :alt => "", :height => '180', :width => '180'), "/assets/gallery/flyer/flyer_0009.jpg", :class =>"fancybox", :rel => "gallery1") %>
+		<%= link_to(image_tag("gallery/flyer/flyer_0010.jpg", :alt => "", :height => '180', :width => '180'), "/assets/gallery/flyer/flyer_0010.jpg", :class =>"fancybox", :rel => "gallery1") %>
+		<%= link_to(image_tag("gallery/flyer/flyer_0011.jpg", :alt => "", :height => '180', :width => '180'), "/assets/gallery/flyer/flyer_0011.jpg", :class =>"fancybox", :rel => "gallery1") %>
+		<%= link_to(image_tag("gallery/flyer/flyer_0012.jpg", :alt => "", :height => '180', :width => '180'), "/assets/gallery/flyer/flyer_0012.jpg", :class =>"fancybox", :rel => "gallery1") %>
+		<%= link_to(image_tag("gallery/flyer/flyer_0013.jpg", :alt => "", :height => '180', :width => '180'), "/assets/gallery/flyer/flyer_0013.jpg", :class =>"fancybox", :rel => "gallery1") %>
+		<%= link_to(image_tag("gallery/flyer/flyer_0014.jpg", :alt => "", :height => '180', :width => '180'), "/assets/gallery/flyer/flyer_0014.jpg", :class =>"fancybox", :rel => "gallery1") %>
+		<%= link_to(image_tag("gallery/flyer/flyer_0015.jpg", :alt => "", :height => '180', :width => '180'), "/assets/gallery/flyer/flyer_0015.jpg", :class =>"fancybox", :rel => "gallery1") %>
+		<br/>
 
-			<a class="fancybox" rel="gallery1" href="/assets/gallery/flyer_0011.jpg" title="">
-	        <%= image_tag("gallery/flyer_0011.jpg", :alt => "", :height => '180', :width => '180') %>
-		    </a>
-			<a class="fancybox" rel="gallery1" href="/assets/gallery/flyer_0012.jpg" title="">
-	        <%= image_tag("gallery/flyer_0012.jpg", :alt => "", :height => '180', :width => '180') %>
-		    </a>
-			<a class="fancybox" rel="gallery1" href="/assets/gallery/flyer_0013.jpg" title="">
-	        <%= image_tag("gallery/flyer_0013.jpg", :alt => "", :height => '180', :width => '180') %>
-		    </a>
-			<a class="fancybox" rel="gallery1" href="/assets/gallery/flyer_0014.jpg" title="">
-	        <%= image_tag("gallery/flyer_0014.jpg", :alt => "", :height => '180', :width => '180') %>
-		    </a>
-			<a class="fancybox" rel="gallery1" href="/assets/gallery/flyer_0015.jpg" title="">
-	        <%= image_tag("gallery/flyer_0015.jpg", :alt => "", :height => '180', :width => '180') %>
-		    </a>
-			
-			<br/>
+		<%= link_to(image_tag("gallery/hair/hair_0001.jpg", :alt => "", :height => '180', :width => '145'), "/assets/gallery/hair/hair_0001.jpg", :class =>"fancybox", :rel => "gallery1") %>
+		<%= link_to(image_tag("gallery/hair/hair_0002.jpg", :alt => "", :height => '180', :width => '145'), "/assets/gallery/hair/hair_0002.jpg", :class =>"fancybox", :rel => "gallery1") %>
+		<%= link_to(image_tag("gallery/hair/hair_0003.jpg", :alt => "", :height => '180', :width => '145'), "/assets/gallery/hair/hair_0003.jpg", :class =>"fancybox", :rel => "gallery1") %>
+		<%= link_to(image_tag("gallery/hair/hair_0004.jpg", :alt => "", :height => '180', :width => '145'), "/assets/gallery/hair/hair_0004.jpg", :class =>"fancybox", :rel => "gallery1") %>
+		<%= link_to(image_tag("gallery/hair/hair_0005.jpg", :alt => "", :height => '180', :width => '145'), "/assets/gallery/hair/hair_0005.jpg", :class =>"fancybox", :rel => "gallery1") %>
+		<%= link_to(image_tag("gallery/hair/hair_0006.jpg", :alt => "", :height => '180', :width => '145'), "/assets/gallery/hair/hair_0006.jpg", :class =>"fancybox", :rel => "gallery1") %>
+		<%= link_to(image_tag("gallery/hair/hair_0007.jpg", :alt => "", :height => '180', :width => '145'), "/assets/gallery/hair/hair_0007.jpg", :class =>"fancybox", :rel => "gallery1") %>
+		<%= link_to(image_tag("gallery/hair/hair_0008.jpg", :alt => "", :height => '180', :width => '145'), "/assets/gallery/hair/hair_0008.jpg", :class =>"fancybox", :rel => "gallery1") %>
+		<%= link_to(image_tag("gallery/hair/hair_0009.jpg", :alt => "", :height => '180', :width => '145'), "/assets/gallery/hair/hair_0009.jpg", :class =>"fancybox", :rel => "gallery1") %>
+		<%= link_to(image_tag("gallery/hair/hair_0010.jpg", :alt => "", :height => '180', :width => '145'), "/assets/gallery/hair/hair_0010.jpg", :class =>"fancybox", :rel => "gallery1") %>
+		<%= link_to(image_tag("gallery/hair/hair_0011.jpg", :alt => "", :height => '180', :width => '145'), "/assets/gallery/hair/hair_0011.jpg", :class =>"fancybox", :rel => "gallery1") %>
+		<%= link_to(image_tag("gallery/hair/hair_0012.jpg", :alt => "", :height => '180', :width => '145'), "/assets/gallery/hair/hair_0012.jpg", :class =>"fancybox", :rel => "gallery1") %>
+		<%= link_to(image_tag("gallery/hair/hair_0013.jpg", :alt => "", :height => '180', :width => '145'), "/assets/gallery/hair/hair_0013.jpg", :class =>"fancybox", :rel => "gallery1") %>
+		<%= link_to(image_tag("gallery/hair/hair_0014.jpg", :alt => "", :height => '180', :width => '145'), "/assets/gallery/hair/hair_0014.jpg", :class =>"fancybox", :rel => "gallery1") %>
 
-		    <a href="#home" id="home"><%= image_tag("topmenu.png", :height => '60', :width => '60', :align => 'right') %></a>
-			<br/>
-
+		<br/>
+		<a href="#home" id="home"><%= image_tag("topmenu.png", :height => '60', :width => '60', :align => 'right') %></a>
+	    <br/>
 	  </div>
 	
 	<script type="text/javascript" charset="utf-8">
@@ -279,7 +263,7 @@ $(function(){
 		<h3>
 	    <%= image_tag("menu/06blog.png", :height => '40', :width => '274') %>
 		</h3>
-		<p>CAOSブログ-->><a href="http://blog.caos.jp" target='_blank'>コチラ</a></p>
+		<%= (content_tag :p, link_to("CAOSブログ-->>", "http://blog.caos.jp", :target => "_blank")) %>
 		<br/>
 
 	    <a href="#home" id="home"><%= image_tag("topmenu.png", :height => '60', :width => '60', :align => 'right') %></a>

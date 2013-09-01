@@ -1,5 +1,6 @@
 class CaosController < ApplicationController
   def home
+    @caos = "yahoo.co.jp"
   end
 
   def about
