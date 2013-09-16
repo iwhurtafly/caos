@@ -38,10 +38,13 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.2)
+    dekiru (0.0.10)
+      http_accept_language (>= 2.0.0)
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
     hike (1.2.2)
+    http_accept_language (2.0.0)
     i18n (0.6.4)
     journey (1.0.4)
     jquery-rails (2.2.1)
@@ -112,6 +115,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
+  dekiru
   jquery-rails
   letter_opener
   newrelic_rpm
