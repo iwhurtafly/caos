@@ -1,357 +1,230 @@
-	<div id="page-header" id="home">
-	    
-	  <table id="snstbl">
-		  <td width="200">
-		  </td>
-          <td><%= image_tag("caos_logo.png") %></td>
-		  <td width="50">
-		  </td>
-          <td><p><font color="#EEE8AA">Follow us!</font></p>
-          </td>
-		  <td>
-			<span>
-			<a class='facebook' href='http://www.facebook.com/pages/Unisex-hairmake-Caos/446876805356728' target='_blank'>
-		    <%= image_tag("facebook.png", :height => '80', :width => '80') %>
-		    </a>
-		    </span>
-			<span>
-			<a class='facebook' href='https://twitter.com/CAOS_1999' target='_blank'>		
-		    <%= image_tag("twitter.png", :height => '80', :width => '80') %>
-	        </a>
-     	    </span>
-		  </td>
-		  <td width="20">
-		  </td>
-	  </table>
-	</div>
-
+<div id="page-header">	    
+  <table id="snstbl">
+    <td width="200"></td>
+    <td><%= image_tag("caos_logo.png") %></td>
+    <td width="50"></td>
+    <td><p>Follow us!</p></td>
+    <td>
+	  <span>		
+	  <%=link_to(image_tag("facebook.png", :height => '80', :width => '80'), "http://www.facebook.com/pages/Unisex-hairmake-Caos/446876805356728",  :target => '_blank') %>		
+	  </span>
+	  <span>
+	  <%=link_to(image_tag("twitter.png", :height => '80', :width => '80'), "https://twitter.com/CAOS_1999",  :target => '_blank') %>
+      </span>
+	</td>
+	<td width="20"></td>
+  </table>
+</div>
 	
-	<div id="clear-block">
-	</div>
+<div id="clear-block"></div>
 
 <br/>	
 
-<div id="maximage">
-
-    <div class="first-item">
-		<%= image_tag("background.jpg", :alt => "", :height => '840', :width => '1400') %>
-    </div>	
-
-
+<div id="page-menu" style="float:left;">
+	
+  <% i = 0 %>
+  <% 8.times do %>
+    <% i += 1 %>
+    <% if i == 1 %>
+      <%=link_to(image_tag("menu/#{format("%02d",i)}.png", :alt => "", :height => '40', :width => '274')) %>
+    <% else %>
+      <%=link_to(image_tag("menu/#{format("%02d",i)}.png", :alt => "", :height => '40', :width => '274'), "##{format("%02d",i)}", :id => "about") %>
+    <% end %>
+    <br/>
+  <% end %>
+	
 </div>
 
-<script type="text/javascript" charset="utf-8">
-$(function(){
-    $('#maximage').maximage();
-});
+<div id="maximage2" style="float:center;">
+  <div class="video" style="float:center;">
+    <iframe width="100%" height=600 src="http://www.youtube.com/embed/N88qo5uSzRs" frameborder="0" class="youtube-video" allowfullscreen>
+    </iframe>
+  </div>
+</div>
 
+<div id="container">
+  <div class="section" id="02">
+    <h3>
+      <%= image_tag("menu/02.png", :height => '40', :width => '274') %>
+    </h3>
+    <p class="normal">1999年9月15日OPEN。<br>
+	  以来、コンセプトを”Avangard”とおき、<br>
+	  スタッフ全員が確かな知識と技術力で<br>
+	  お客様一人一人に全力を尽くしていくと共に、<br>
+	  常にトータル的な革新さをプロデュースしていきたいと考えています。<br>
+	</p>
+	<br>
+	<p class="gold">OPEN：<br>
+	  11am - 9pm ：Weekday<br>
+	  10am - 7pm ：Sunday & Holiday<br>
+	  Closed on Tuesday & first and third Monday of each month<br>		
+	</p>		
+    <%=link_to(image_tag("topmenu.png", :height => '60', :width => '60', :align => 'right'), "#home", :id => "home") %>
+	<br/>
+  </div>
+
+<div class="section" id="03">
+  <h3>
+    <%= image_tag("menu/03.png", :height => '40', :width => '274') %>
+  </h3>
+  <ul>
+    <li>CUT（シャンプー、ブロー込）<font color="#EEE8AA">¥4,725</font></li>
+	<li>PERM（cut、シャンプー、ブロー込）<font color="#EEE8AA">¥8,400〜</font>　※スタイルによって料金が異なります。</li>
+	<li>COLOR（cut別）<font color="#EEE8AA">¥4,200〜</font>　※カラーの入れ方（メッシュ、ダブルカラー、etc）によって料金が異なります。</li>
+	<li>STUDENT DISCOUNT（シャンプー、ブロー込）<font color="#EEE8AA">¥3,885</font>　※中学・高校・大学・専門学校生</li>
+	<li>TREATMENT　<font color="#EEE8AA">¥3,150〜</font>　※種類（アロマトリートメント・セリエエクスパート）によって料金が異なります。</li>		
+	<li>縮毛矯正（cut、シャンプー、ブロー込）　<font color="#EEE8AA">¥19,950〜</font></li>		
+	<li>エクステンション / ドレッド　<font color="#EEE8AA">ask</font></li>		
+	<li>SET<font color="#EEE8AA">　¥4,200</font></li>
+	<li>ブロー<font color="#EEE8AA">　¥1,050</font></li>
+	<li>着付<font color="#EEE8AA">　¥6,300</font> ※要予約</li>
+    <br/>
+    <br/>
+  </ul>
+
+  <table id="caospa_tbl">
+    <td><%= image_tag("links/caospa.gif", :alt => "", :height => '31', :width => '96') %></td>
+    <td><p class="normal">CAOSPAは、CAOSに併設するヘッドスパ・ヘッドエステです。</p></td>
+  </table>
+  
+  <ul>
+    <li>スキャルプピーリングエステ<font color="#EEE8AA">　60min　¥6,300</font></li>
+	<li>スキャルプコントロールエステ<font color="#EEE8AA">　50min　¥5,250</font></li>
+	<li>３回分回数券<font color="#EEE8AA">　¥12,600（通常より¥3,000 OFF）</font></li>
+	<li>クリームバス<font color="#EEE8AA">　40min　¥4,200</font></li>
+  </ul>		
+  </br>
+  
+  <% i = 0 %>
+  <% 2.times do %>
+    <% i += 1 %>
+    <%=link_to(image_tag("caospa/caospa_#{format("%04d",i)}.jpg", :alt => "", :height => '180', :width => '135'), "/assets/caospa/caospa_#{format("%04d",i)}.jpg", :class => "fancybox", :rel => "caospa") %>
+  <% end %>
+  <br/>
+
+  <%=link_to(image_tag("topmenu.png", :height => '60', :width => '60', :align => 'right'), "#home", :id => "home") %>
+  <br/>		
+</div>
+
+<div class="section" id="04">
+  <h3>
+    <%= image_tag("menu/04.png", :height => '40', :width => '274') %>
+  </h3>		
+  <%= image_tag("stylist/higuchi-san.jpg", :alt => "", :height => '130', :width => '130') %>
+  <%=link_to(image_tag("facebook.png", :height => '60', :width => '60'), "http://www.facebook.com/morikazu.higuchi",  :target => '_blank') %>		
+  <p class="normal">Owner: Morikazu Higuchi</p>
+		
+  <%= image_tag("stylist/syouta-san.jpg", :alt => "", :height => '130', :width => '130') %>
+  <%=link_to(image_tag("facebook.png", :height => '60', :width => '60'), "http://www.facebook.com/syouta.suzuki.90",  :target => '_blank') %>		
+  <%=link_to(image_tag("insta.png", :height => '60', :width => '60'), "http://instagram.com/syoutasuzuki",  :target => '_blank') %>		
+  <p class="normal">Chief: Syouta Suzuki</p>
+	    
+  <%= image_tag("stylist/kana-san.jpg", :alt => "", :height => '130', :width => '130') %>		
+  <p class="normal">Assistant: Kana Sato</p>
+  <br/>
+
+  <%=link_to(image_tag("topmenu.png", :height => '60', :width => '60', :align => 'right'), "#home", :id => "home") %>
+  <br/>				
+</div>
+
+<div class="section" id="05">
+  <h3>
+    <%= image_tag("menu/05.png", :height => '40', :width => '274') %>
+  </h3>		
+  <% i = 0 %>
+  <% 15.times do %>
+    <% i += 1 %>
+    <%=link_to(image_tag("gallery/flyer/flyer_#{format("%04d",i)}.jpg", :alt => "", :height => '180', :width => '180'), "/assets/gallery/flyer/flyer_#{format("%04d",i)}.jpg", :class => "fancybox", :rel => "gallery1") %>
+  <% end %>
+  <br/>
+
+  <% i = 0 %>
+  <% 14.times do %>
+    <% i += 1 %>
+    <%=link_to(image_tag("gallery/hair/hair_#{format("%04d",i)}.jpg", :alt => "", :height => '180', :width => '145'), "/assets/gallery/hair/hair_#{format("%04d",i)}.jpg", :class => "fancybox", :rel => "gallery1") %>
+  <% end %>
+  <br/>
+
+  <%=link_to(image_tag("topmenu.png", :height => '60', :width => '60', :align => 'right'), "#home", :id => "home") %>
+  <br/>		
+</div>
+	
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function(){		
+    
+    $('a[href^=#home]').click(function(){
+	  var speed = 700;
+	  var p = 0;
+	  $('html,body').animate({scrollTop:p}, speed, 'swing');
+	    return false;
+	});
+		
+　　　　$('a[href^=#]').click(function(){
+	  var speed = 700;
+	　　var i = $('a[href^=#]').index(this);
+	  var p = $(".section").eq(i).offset().top;		
+	  $('html,body').animate({scrollTop:p}, speed, 'swing');
+	  return false;
+	});
+	$(".fancybox").fancybox({
+	  openEffect	: 'none',
+	　　closeEffect	: 'none'
+　　　　});
+  });
 </script>
 
+<div class="section" id="06">
+  <h3>
+    <%= image_tag("menu/06.png", :height => '40', :width => '274') %>
+  </h3>
+  <%= (content_tag :p, link_to("CAOSブログ-->>", "http://blog.caos.jp", :target => "_blank"), :class => "gold") %>
+  <br/>
 
-	<div id="page-menu" style="float:left;">
-	    <a href="home" id="home"><%= image_tag("menu/01home.png", :height => '40', :width => '274') %></a>
-	<br/>
-	    <a href="#about" id="about"><%= image_tag("menu/02about.png", :height => '40', :width => '274') %></a>
-    <br/>
-	    <a href="#services" id="services"><%= image_tag("menu/03services.png", :height => '40', :width => '274') %></a>
-    <br/>
-	    <a href="#stylist" id="stylist"><%= image_tag("menu/04stylist.png", :height => '40', :width => '274') %></a>
-    <br/>
-	    <a href="#gallery" id="gallery"><%= image_tag("menu/05gallery.png", :height => '40', :width => '274') %></a>
-    <br/>
-	    <a href="#blog" id="blog"><%= image_tag("menu/06blog.png", :height => '40', :width => '274') %></a>
-    <br/>
-	    <a href="#links" id="links"><%= image_tag("menu/07links.png", :height => '40', :width => '274') %></a>
-    <br/>
-	    <a href="#contact" id="contact"><%= image_tag("menu/08contact.png", :height => '40', :width => '274') %></a>
+  <%=link_to(image_tag("topmenu.png", :height => '60', :width => '60', :align => 'right'), "#home", :id => "home") %>
+  <br/>		
+</div>
 
-    </div>
-
-
-	<div id="maximage2" style="float:center;">
-		<div class="video" style="float:center;">
-	    	<iframe width="100%" height=600 src="http://www.youtube.com/embed/N88qo5uSzRs" frameborder="0" class="youtube-video" allowfullscreen></iframe>
-		</div>
-	</div>
-
-
-	<div id="container">
-
-	  <div class="section" id="about">
-		<h3>
-	    <%= image_tag("menu/02about.png", :height => '40', :width => '274') %>
-		</h3>
-		<p>1999年9月15日OPEN。<br>
-		以来、コンセプトを”Avangard”とおき、<br>
-		スタッフ全員が確かな知識と技術力で<br>
-		お客様一人一人に全力を尽くしていくと共に、<br>
-		常にトータル的な革新さをプロデュースしていきたいと考えています。<br>
-		<br>
-		<font color="#EEE8AA">OPEN：<br>
-		11am - 9pm ：Weekday<br>
-		10am - 7pm ：Sunday & Holiday<br>
-		Closed on Tuesday & first and third Monday of each month.</font><br>		
-		</p>
-		
-
-	    <a href="#home" id="home"><%= image_tag("topmenu.png", :height => '60', :width => '60', :align => 'right') %></a>
-		<br/>
+<div class="section" id="07">
+  <h3>
+    <%= image_tag("menu/07.png", :height => '40', :width => '274') %>
+  </h3>	
+  <p class="normal">Label  ：　
+    <%= link_to("SONZAI,", "http://www.sonzairecords.com", :target => "_blank") %>
+    <%= link_to("CATUNE,", "http://www.catune.com", :target => "_blank") %>
+    <%= link_to("STRAIGHT UP RECORDS", "http://www.straightup-rec.com", :target => "_blank") %>
+  </p>
+  <p class="normal">
+    Band  ：　
+    <%= link_to("toe,", "http://www.toe.st", :target => "_blank") %>
+    <%= link_to("envy,", "http://www.sonzairecords.com/envy.html", :target => "_blank") %>
+    <%= link_to("theSun,", "http://caos.jp/theSun", :target => "_blank") %>
+    <%= link_to("Comeback my Daughters", "http://www.comebackmydaughters.com", :target => "_blank") %>
+  </p>
+  <p class="normal">
+    Music  ：　
+    <%= link_to("dotlinecircle", "http://dotlinecircle.com", :target => "_blank") %>
+  </p>
+  <p class="normal">
+    Design：　
+    <%= link_to("NSSGRAPHICA", "http://nssgraphica.com", :target => "_blank") %>
+  </p>
+  <br/>
+  <%=link_to(image_tag("topmenu.png", :height => '60', :width => '60', :align => 'right'), "#home", :id => "home") %>
+  <br/>		
+</div>
 	
-	  </div>
-	  <div class="section" id="services">
-		<h3>
-	    <%= image_tag("menu/03services.png", :height => '40', :width => '274') %>
-		</h3>
-		<ul>
-			<li>CUT（シャンプー、ブロー込）<font color="#EEE8AA">¥4,725</font></li>
-
-			<li>PERM（cut、シャンプー、ブロー込）<font color="#EEE8AA">¥8,400〜</font>　※スタイルによって料金が異なります。</li>
-
-			<li>COLOR（cut別）<font color="#EEE8AA">¥4,200〜</font>　※カラーの入れ方（メッシュ、ダブルカラー、etc）によって料金が異なります。</li>
-
-			<li>STUDENT DISCOUNT（シャンプー、ブロー込）<font color="#EEE8AA">¥3,885</font>　※中学・高校・大学・専門学校生</li>
-
-			<li>TREATMENT　<font color="#EEE8AA">¥3,150〜</font>　※種類（アロマトリートメント・セリエエクスパート）によって料金が異なります。</li>		
-			<li>縮毛矯正（cut、シャンプー、ブロー込）　<font color="#EEE8AA">¥19,950〜</font></li>		
-
-			<li>エクステンション / ドレッド　<font color="#EEE8AA">ask</font></li>		
-
-			<li>SET<font color="#EEE8AA">　¥4,200</font></li>
-
-			<li>ブロー<font color="#EEE8AA">　¥1,050</font></li>
-
-			<li>着付<font color="#EEE8AA">　¥6,300</font> ※要予約</li>
-
-            <br/>
-            <br/>
-		</ul>
-
-
-
-	  <table id="XXXXXXX">
-          <td><%= image_tag("links/caospa.gif", :alt => "", :height => '31', :width => '96') %></td>
-
-          <td><p>CAOSPAは、CAOSに併設するヘッドスパ・ヘッドエステです。</p>
-          </td>
-      </table>
-
-
-		<ul>
-			<li>スキャルプピーリングエステ<font color="#EEE8AA">　60min　¥6,300</font></li>
-
-			<li>スキャルプコントロールエステ<font color="#EEE8AA">　50min　¥5,250</font></li>
-
-			<li>３回分回数券<font color="#EEE8AA">　¥12,600（通常より¥3,000 OFF）</font></li>
-
-			<li>クリームバス<font color="#EEE8AA">　40min　¥4,200</font></li>
-
-		</ul>
-		
-		</br>
-
-		<a class="fancybox" rel="caospa" href="/assets/caospa/caospa_0001.jpg" title="">
-        <%= image_tag("caospa/caospa_0001.jpg", :alt => "", :height => '180', :width => '135') %>
-	    </a>
-		<a class="fancybox" rel="caospa" href="/assets/caospa/caospa_0002.jpg" title="">
-        <%= image_tag("caospa/caospa_0002.jpg", :alt => "", :height => '180', :width => '135') %>
-	    </a>
-
-		<br/>
-
-	    <a href="#home" id="home"><%= image_tag("topmenu.png", :height => '60', :width => '60', :align => 'right') %></a>
-		<br/>
-
-		
-	  </div>
-	  <div class="section" id="stylist">
-		<h3>
-	    <%= image_tag("menu/04stylist.png", :height => '40', :width => '274') %>
-		</h3>
-		
-        <%= image_tag("stylist/higuchi-san.jpg", :alt => "", :height => '130', :width => '130') %>
-		<a href='http://www.facebook.com/morikazu.higuchi' target='_blank'>
-	    <%= image_tag("facebook.png", :height => '60', :width => '60') %>
-	    </a>
-		<p>Owner: Morikazu Higuchi</p>
-		
-        <%= image_tag("stylist/syouta-san.jpg", :alt => "", :height => '130', :width => '130') %>
-		<a class='facebook' href='http://www.facebook.com/syouta.suzuki.90' target='_blank'>
-	    <%= image_tag("facebook.png", :height => '60', :width => '60') %>
-	    </a>
-		<a class='facebook' href='http://instagram.com/syoutasuzuki' target='_blank'>		
-	    <%= image_tag("insta.png", :height => '60', :width => '60') %>
-        </a>
-		<p>Chief: Syouta Suzuki</p>
-	    <%= image_tag("stylist/kana-san.jpg", :alt => "", :height => '130', :width => '130') %>		
-		<p>Assistant: Kana Sato</p>
-
-
-		<br/>
-
-	    <a href="#home" id="home"><%= image_tag("topmenu.png", :height => '60', :width => '60', :align => 'right') %></a>
-		<br/>
-		
-	  </div>
-
-	  <div class="section" id="gallery">
-		<h3>
-	    <%= image_tag("menu/05gallery.png", :height => '40', :width => '274') %>
-		</h3>
-		
-		<%= link_to(image_tag("gallery/flyer/flyer_0001.jpg", :alt => "", :height => '180', :width => '180'), "/assets/gallery/flyer/flyer_0001.jpg", :class =>"fancybox", :rel => "gallery1") %>
-		<%= link_to(image_tag("gallery/flyer/flyer_0002.jpg", :alt => "", :height => '180', :width => '180'), "/assets/gallery/flyer/flyer_0002.jpg", :class =>"fancybox", :rel => "gallery1") %>
-		<%= link_to(image_tag("gallery/flyer/flyer_0003.jpg", :alt => "", :height => '180', :width => '180'), "/assets/gallery/flyer/flyer_0003.jpg", :class =>"fancybox", :rel => "gallery1") %>
-		<%= link_to(image_tag("gallery/flyer/flyer_0004.jpg", :alt => "", :height => '180', :width => '180'), "/assets/gallery/flyer/flyer_0004.jpg", :class =>"fancybox", :rel => "gallery1") %>
-		<%= link_to(image_tag("gallery/flyer/flyer_0005.jpg", :alt => "", :height => '180', :width => '180'), "/assets/gallery/flyer/flyer_0005.jpg", :class =>"fancybox", :rel => "gallery1") %>
-		<%= link_to(image_tag("gallery/flyer/flyer_0006.jpg", :alt => "", :height => '180', :width => '180'), "/assets/gallery/flyer/flyer_0006.jpg", :class =>"fancybox", :rel => "gallery1") %>
-		<%= link_to(image_tag("gallery/flyer/flyer_0007.jpg", :alt => "", :height => '180', :width => '180'), "/assets/gallery/flyer/flyer_0007.jpg", :class =>"fancybox", :rel => "gallery1") %>
-		<%= link_to(image_tag("gallery/flyer/flyer_0008.jpg", :alt => "", :height => '180', :width => '180'), "/assets/gallery/flyer/flyer_0008.jpg", :class =>"fancybox", :rel => "gallery1") %>
-		<%= link_to(image_tag("gallery/flyer/flyer_0009.jpg", :alt => "", :height => '180', :width => '180'), "/assets/gallery/flyer/flyer_0009.jpg", :class =>"fancybox", :rel => "gallery1") %>
-		<%= link_to(image_tag("gallery/flyer/flyer_0010.jpg", :alt => "", :height => '180', :width => '180'), "/assets/gallery/flyer/flyer_0010.jpg", :class =>"fancybox", :rel => "gallery1") %>
-		<%= link_to(image_tag("gallery/flyer/flyer_0011.jpg", :alt => "", :height => '180', :width => '180'), "/assets/gallery/flyer/flyer_0011.jpg", :class =>"fancybox", :rel => "gallery1") %>
-		<%= link_to(image_tag("gallery/flyer/flyer_0012.jpg", :alt => "", :height => '180', :width => '180'), "/assets/gallery/flyer/flyer_0012.jpg", :class =>"fancybox", :rel => "gallery1") %>
-		<%= link_to(image_tag("gallery/flyer/flyer_0013.jpg", :alt => "", :height => '180', :width => '180'), "/assets/gallery/flyer/flyer_0013.jpg", :class =>"fancybox", :rel => "gallery1") %>
-		<%= link_to(image_tag("gallery/flyer/flyer_0014.jpg", :alt => "", :height => '180', :width => '180'), "/assets/gallery/flyer/flyer_0014.jpg", :class =>"fancybox", :rel => "gallery1") %>
-		<%= link_to(image_tag("gallery/flyer/flyer_0015.jpg", :alt => "", :height => '180', :width => '180'), "/assets/gallery/flyer/flyer_0015.jpg", :class =>"fancybox", :rel => "gallery1") %>
-		<br/>
-
-		<%= link_to(image_tag("gallery/hair/hair_0001.jpg", :alt => "", :height => '180', :width => '145'), "/assets/gallery/hair/hair_0001.jpg", :class =>"fancybox", :rel => "gallery1") %>
-		<%= link_to(image_tag("gallery/hair/hair_0002.jpg", :alt => "", :height => '180', :width => '145'), "/assets/gallery/hair/hair_0002.jpg", :class =>"fancybox", :rel => "gallery1") %>
-		<%= link_to(image_tag("gallery/hair/hair_0003.jpg", :alt => "", :height => '180', :width => '145'), "/assets/gallery/hair/hair_0003.jpg", :class =>"fancybox", :rel => "gallery1") %>
-		<%= link_to(image_tag("gallery/hair/hair_0004.jpg", :alt => "", :height => '180', :width => '145'), "/assets/gallery/hair/hair_0004.jpg", :class =>"fancybox", :rel => "gallery1") %>
-		<%= link_to(image_tag("gallery/hair/hair_0005.jpg", :alt => "", :height => '180', :width => '145'), "/assets/gallery/hair/hair_0005.jpg", :class =>"fancybox", :rel => "gallery1") %>
-		<%= link_to(image_tag("gallery/hair/hair_0006.jpg", :alt => "", :height => '180', :width => '145'), "/assets/gallery/hair/hair_0006.jpg", :class =>"fancybox", :rel => "gallery1") %>
-		<%= link_to(image_tag("gallery/hair/hair_0007.jpg", :alt => "", :height => '180', :width => '145'), "/assets/gallery/hair/hair_0007.jpg", :class =>"fancybox", :rel => "gallery1") %>
-		<%= link_to(image_tag("gallery/hair/hair_0008.jpg", :alt => "", :height => '180', :width => '145'), "/assets/gallery/hair/hair_0008.jpg", :class =>"fancybox", :rel => "gallery1") %>
-		<%= link_to(image_tag("gallery/hair/hair_0009.jpg", :alt => "", :height => '180', :width => '145'), "/assets/gallery/hair/hair_0009.jpg", :class =>"fancybox", :rel => "gallery1") %>
-		<%= link_to(image_tag("gallery/hair/hair_0010.jpg", :alt => "", :height => '180', :width => '145'), "/assets/gallery/hair/hair_0010.jpg", :class =>"fancybox", :rel => "gallery1") %>
-		<%= link_to(image_tag("gallery/hair/hair_0011.jpg", :alt => "", :height => '180', :width => '145'), "/assets/gallery/hair/hair_0011.jpg", :class =>"fancybox", :rel => "gallery1") %>
-		<%= link_to(image_tag("gallery/hair/hair_0012.jpg", :alt => "", :height => '180', :width => '145'), "/assets/gallery/hair/hair_0012.jpg", :class =>"fancybox", :rel => "gallery1") %>
-		<%= link_to(image_tag("gallery/hair/hair_0013.jpg", :alt => "", :height => '180', :width => '145'), "/assets/gallery/hair/hair_0013.jpg", :class =>"fancybox", :rel => "gallery1") %>
-		<%= link_to(image_tag("gallery/hair/hair_0014.jpg", :alt => "", :height => '180', :width => '145'), "/assets/gallery/hair/hair_0014.jpg", :class =>"fancybox", :rel => "gallery1") %>
-
-		<br/>
-		<a href="#home" id="home"><%= image_tag("topmenu.png", :height => '60', :width => '60', :align => 'right') %></a>
-	    <br/>
-	  </div>
-	
-	<script type="text/javascript" charset="utf-8">
-	　　$(document).ready(function(){
-		
-		$('a[href^=#home]').click(function(){
-	      var speed = 700;
-		  var p = 0;
-	    $('html,body').animate({scrollTop:p}, speed, 'swing');
-		  return false;
-		});
-		
-　　　　　　　　$('a[href^=#]').click(function(){
-	  　　　　var speed = 700;
-	　　　　　　var i = $('a[href^=#]').index(this);
-		　　var p = $(".section").eq(i).offset().top;		
-	    　　$('html,body').animate({scrollTop:p}, speed, 'swing');
-	    　　return false;
-	  　　});
-	　　　　$(".fancybox").fancybox({
-	　　　　　　openEffect	: 'none',
-	　　　　　　closeEffect	: 'none'
-　　　　　　　　});
-	　　});
-	</script>
-
-	  <div class="section" id="blog">
-		<h3>
-	    <%= image_tag("menu/06blog.png", :height => '40', :width => '274') %>
-		</h3>
-		<%= (content_tag :p, link_to("CAOSブログ-->>", "http://blog.caos.jp", :target => "_blank")) %>
-		<br/>
-
-	    <a href="#home" id="home"><%= image_tag("topmenu.png", :height => '60', :width => '60', :align => 'right') %></a>
-		<br/>
-
-	  </div>
-	
-	  <div class="section" id="links">
-		<h3>
-	    <%= image_tag("menu/07links.png", :height => '40', :width => '274') %>
-		</h3>	
-
-	    <p>
-		Label  ：　
-		<a href='http://www.sonzairecords.com' target='_blank'>
-	      SONZAI, 
-        </a></font>
-
-		<a href='http://www.catune.com' target='_blank'>
-	      CATUNE,
-        </a></font>
-
-		<a href='http://www.straightup-rec.com' target='_blank'>
-	      STRAIGHT UP RECORDS
-        </a></font>
-        </p>
-
-	    <p>
-		Band  ：　
-		<a href='http://www.toe.st' target='_blank'>
-	      toe, 
-        </a></font>
-
-		<a href='http://www.sonzairecords.com/envy.html' target='_blank'>
-	      envy,
-        </a></font>
-
-		<a href='http://caos.jp/theSun' target='_blank'>
-	      theSun,
-        </a></font>
-
-		<a href='http://www.comebackmydaughters.com' target='_blank'>
-	      Comeback my Daughters
-        </a></font>
-        </p>
-
-	    <p>
-		Music  ：　
-		<a href='http://dotlinecircle.com' target='_blank'>
-	      dotlinecircle 
-        </a></font>
-        </p>
-
-	    <p>
-		Design：　
-		<a href='http://nssgraphica.com' target='_blank'>
-	      NSSGRAPHICA 
-        </a></font>
-        </p>
-
-		<br/>
-
-	    <a href="#home" id="home"><%= image_tag("topmenu.png", :height => '60', :width => '60', :align => 'right') %></a>
-		<br/>
-
-	  </div>
-	
-	  <div class="section" id="contact">
-		<h3>
-	    <%= image_tag("menu/08contact.png", :height => '40', :width => '274') %>
-		</h3>
-		<p>ご予約はお電話・予約フォームから受け付けております。
-	    <a href="/contact" id="contact">予約フォーム</a>
-		<br/>
-		</p>
-
-		<p>札幌市中央区南1条西19丁目　エスターロワイヤルビル2F　tel/fax 011-614-7535</p>
-
-		<iframe width="800" height="450" frameborder="10" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.jp/maps?f=q&amp;source=s_q&amp;hl=ja&amp;geocode=&amp;q=%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%97%EF%BC%91%E6%9D%A1%E8%A5%BF%EF%BC%91%EF%BC%99%E4%B8%81%E7%9B%AE+%EF%BC%A3%EF%BC%A1%EF%BC%AF%EF%BC%B3%EF%BC%B0%EF%BC%A1&amp;aq=0&amp;oq=%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%971%E6%9D%A1%E8%A5%BF19%E4%B8%81%E7%9B%AE+caos&amp;sll=43.056029,141.328157&amp;sspn=0.002242,0.004544&amp;brcurrent=3,0x5f0b2994b799e711:0x110c71367f0adace,0&amp;ie=UTF8&amp;hq=%EF%BC%A3%EF%BC%A1%EF%BC%AF%EF%BC%B3%EF%BC%B0%EF%BC%A1&amp;hnear=%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%97%EF%BC%91%E6%9D%A1%E8%A5%BF%EF%BC%91%EF%BC%99%E4%B8%81%E7%9B%AE&amp;ll=43.055314,141.328696&amp;spn=0.006295,0.006295&amp;t=m&amp;output=embed&iwloc=B"></iframe><br /><a href="https://maps.google.co.jp/maps?f=q&amp;source=embed&amp;hl=ja&amp;geocode=&amp;q=%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%97%EF%BC%91%E6%9D%A1%E8%A5%BF%EF%BC%91%EF%BC%99%E4%B8%81%E7%9B%AE+%EF%BC%A3%EF%BC%A1%EF%BC%AF%EF%BC%B3%EF%BC%B0%EF%BC%A1&amp;aq=0&amp;oq=%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%971%E6%9D%A1%E8%A5%BF19%E4%B8%81%E7%9B%AE+caos&amp;sll=43.056029,141.328157&amp;sspn=0.002242,0.004544&amp;brcurrent=3,0x5f0b2994b799e711:0x110c71367f0adace,0&amp;ie=UTF8&amp;hq=%EF%BC%A3%EF%BC%A1%EF%BC%AF%EF%BC%B3%EF%BC%B0%EF%BC%A1&amp;hnear=%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%97%EF%BC%91%E6%9D%A1%E8%A5%BF%EF%BC%91%EF%BC%99%E4%B8%81%E7%9B%AE&amp;ll=43.055314,141.328696&amp;spn=0.006295,0.006295&amp;t=m" style="color:#0000FF;text-align:left" target='_blank'><font color="#EEE8AA">Google Mapへ</font></a>
-		
-		<br/>
-
-
-	    <a href="#home" id="home"><%= image_tag("topmenu.png", :height => '60', :width => '60', :align => 'right') %></a>
-		<br/>
-
-
-
-	  </div>
-
-	</div>
+<div class="section" id="08">
+  <h3>
+    <%= image_tag("menu/08.png", :height => '40', :width => '274') %>
+  </h3>
+  <p class="normal">ご予約はお電話・予約フォームから受け付けております。
+    <%= link_to("予約フォーム", "/contact", :id => "contact") %>
+    <br/>
+  </p>
+  <p class="normal">札幌市中央区南1条西19丁目　エスターロワイヤルビル2F　tel/fax 011-614-7535</p>
+    <iframe width="800" height="450" frameborder="10" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.jp/maps?f=q&amp;source=s_q&amp;hl=ja&amp;geocode=&amp;q=%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%97%EF%BC%91%E6%9D%A1%E8%A5%BF%EF%BC%91%EF%BC%99%E4%B8%81%E7%9B%AE+%EF%BC%A3%EF%BC%A1%EF%BC%AF%EF%BC%B3%EF%BC%B0%EF%BC%A1&amp;aq=0&amp;oq=%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%971%E6%9D%A1%E8%A5%BF19%E4%B8%81%E7%9B%AE+caos&amp;sll=43.056029,141.328157&amp;sspn=0.002242,0.004544&amp;brcurrent=3,0x5f0b2994b799e711:0x110c71367f0adace,0&amp;ie=UTF8&amp;hq=%EF%BC%A3%EF%BC%A1%EF%BC%AF%EF%BC%B3%EF%BC%B0%EF%BC%A1&amp;hnear=%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%97%EF%BC%91%E6%9D%A1%E8%A5%BF%EF%BC%91%EF%BC%99%E4%B8%81%E7%9B%AE&amp;ll=43.055314,141.328696&amp;spn=0.006295,0.006295&amp;t=m&amp;output=embed&iwloc=B"></iframe><br /><a href="https://maps.google.co.jp/maps?f=q&amp;source=embed&amp;hl=ja&amp;geocode=&amp;q=%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%97%EF%BC%91%E6%9D%A1%E8%A5%BF%EF%BC%91%EF%BC%99%E4%B8%81%E7%9B%AE+%EF%BC%A3%EF%BC%A1%EF%BC%AF%EF%BC%B3%EF%BC%B0%EF%BC%A1&amp;aq=0&amp;oq=%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%971%E6%9D%A1%E8%A5%BF19%E4%B8%81%E7%9B%AE+caos&amp;sll=43.056029,141.328157&amp;sspn=0.002242,0.004544&amp;brcurrent=3,0x5f0b2994b799e711:0x110c71367f0adace,0&amp;ie=UTF8&amp;hq=%EF%BC%A3%EF%BC%A1%EF%BC%AF%EF%BC%B3%EF%BC%B0%EF%BC%A1&amp;hnear=%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%97%EF%BC%91%E6%9D%A1%E8%A5%BF%EF%BC%91%EF%BC%99%E4%B8%81%E7%9B%AE&amp;ll=43.055314,141.328696&amp;spn=0.006295,0.006295&amp;t=m" style="color:#0000FF;text-align:left" target='_blank'><font color="#EEE8AA">Google Mapへ</font></a>
+  <br/>
+  <%=link_to(image_tag("topmenu.png", :height => '60', :width => '60', :align => 'right'), "#home", :id => "home") %>
+  <br/>		
+</div>
+</div>

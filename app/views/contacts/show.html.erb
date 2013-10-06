@@ -3,21 +3,20 @@
 <%= form_for @contact, url: contact_path do |form| %>
 
 <div id="container">
-	<p>ご予約の方は必要事項（お名前、メールアドレス、メモは必須）を記入の上、送信をお願い致します。<br>
-	※メモ欄に予約の日時やご要望をご記入下さい。</p>
-
 	<div class='section'>
+		<p class="gold">ご予約の方は必要事項（お名前、メールアドレス、メモは必須）を記入の上、送信をお願い致します。<br>
+		※メモ欄に予約の日時やご要望をご記入下さい。</p>
 	  <dl>	
-		<dt><p>お名前*</p></dt>
+		<dt><p class="normal">お名前*</p></dt>
 		<dd><input id="contact_name" name="contact[name]" required="required" size="55" type="text" /></dd>
 		
-		<dt><p>メールアドレス*</p></dt>
+		<dt><p class="normal">メールアドレス*</p></dt>
 		<dd><input id="contact_email" name="contact[email]" required="required" size="55" type="email" /></dd>
 		
-		<dt><p>お電話番号</p></dt>
+		<dt><p class="normal">お電話番号</p></dt>
 		<dd><input id="contact_tel" name="contact[tel]" size="55" type="text" /></dd>
 
-		<dt><p>メモ*</p></dt>
+		<dt><p class="normal">メモ*</p></dt>
 		<dd><textarea cols="40" id="contact_text" name="contact[text]" required="required" rows="8"></textarea></dd>
 	  </dl>
 	</div>
@@ -26,7 +25,7 @@
     </div>
 	
 	<div id="page-menu" style="float:left;">
-		<a href="caos/home" id="home"><%= image_tag("menu/01home.png", :height => '40', :width => '274') %>CAOSのHPへ戻る</a>
+		<a href="caos/home" id="home"><%= image_tag("menu/01.png", :height => '40', :width => '274') %>CAOSのHPへ戻る</a>
     </div>
 
 </div>

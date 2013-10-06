@@ -13,6 +13,18 @@
 
 <body bgcolor="black">
 
+	<div id="maximage">
+	    <div class="first-item">
+			<%= image_tag("background.jpg", :alt => "", :height => '840', :width => '1400') %>
+	    </div>	
+	</div>
+
+	<script type="text/javascript" charset="utf-8">
+	$(function(){
+	    $('#maximage').maximage();
+	});
+	</script>
+
     <%= yield %>
 		
 <footer class="footer">

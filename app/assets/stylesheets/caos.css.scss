@@ -42,8 +42,14 @@ margin-bottom:40px;
 -moz-box-shadow:0 1px 4px rgba(0,0,0,0.3);
 box-shadow:0 1px 4px rgba(0,0,0,0.3);
 }
-.section p {
+.section p.normal {
   color: #FFFFFF;
+  padding-left: 30px;
+  line-height: 35px;
+  font-size: 15px;
+}
+.section p.gold {
+  color: #EEE8AA;
   padding-left: 30px;
   line-height: 35px;
   font-size: 15px;
@@ -69,6 +75,10 @@ box-shadow:0 1px 4px rgba(0,0,0,0.3);
 
 #page-header {
 	float : center ;
+	p {
+	  font-size: 15px;
+	  color: #EEE8AA;
+	}
 }
 
 #page-header-right {
