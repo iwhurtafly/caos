@@ -1,12 +1,9 @@
 Caos::Application.routes.draw do
 
-  #for production
-  #root to: "caos#home"
-
+  root :to => "caos#home"
   get "caos/home" => "caos#home"
   post "caos/home"
   resource :contact, only: %w(show create)
-  #get "contact" => "contacts#show"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
