@@ -1,6 +1,11 @@
 // Place all the styles related to the Caos controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
 
 body {
   color: #222;
@@ -24,6 +29,10 @@ p.footer-right {
   color:#FFFFFF;
 }
 
+img {
+  border: 0;
+}
+
 #container {
   width: 900px;
   margin: 0px auto;
@@ -31,8 +40,8 @@ p.footer-right {
 .section {
 margin: 0px auto;
 width:800px;border: 1px solid #ccc;
-padding:50px;background:#FFFFFF;
-background:rgba(0,0,0,.7);
+padding:50px;
+background: image-url('section-bg.png');
 -webkit-border-radius:10px;
 -moz-border-radius:10px;
 border-radius:10px;
@@ -68,17 +77,60 @@ box-shadow:0 1px 4px rgba(0,0,0,0.3);
   padding-left: 280px;
 }
 
+#maximage {
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
 #maximage2 {
 }
 .video {
 }
 
 #page-header {
-	float : center ;
-	p {
-	  font-size: 15px;
-	  color: #EEE8AA;
-	}
+  margin: 0 auto;
+  width: 969px;
+  h1 {
+    float: left;
+    margin: 0;
+    width: 658px;
+    height: 240px;
+    a {
+      display: block;
+      height: 100%;
+      background: image-url('caos_logo.png') top left no-repeat;
+      text-indent: -9999px;
+    }
+  }
+  font-size: 15px;
+  color: #EEE8AA;
+}
+
+.sns-buttons {
+  float: left;
+  margin-left: 50px;
+  padding-top: 90px;
+  height: 150px;
+}
+.sns-buttons-label {
+  float: left;
+  padding-top: 30px;
+}
+.sns-buttons-facebook,
+.sns-buttons-twitter {
+  display: block;
+  float: left;
+  width: 80px;
+  height: 80px;
+  text-indent: -9999px;
+}
+.sns-buttons-facebook {
+  background: image-url('facebook80x80.png') top left no-repeat;
+}
+.sns-buttons-twitter {
+  background: image-url('twitter80x80.png') top left no-repeat;
 }
 
 #page-header-right {

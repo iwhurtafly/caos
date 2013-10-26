@@ -12,4 +12,13 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.fancybox
+//= require jquery.cycle.all
+//= require jquery.maximage.min
 //= require_tree .
+
+jQuery(function($) {
+  if (!navigator.userAgent.match(/MSIE 8.0/)) {
+    $('#maximage').maximage();
+  }
+});
