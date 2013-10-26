@@ -1,38 +1,22 @@
-<div id="page-header">	    
-  <table id="snstbl">
-    <td width="200"></td>
-    <td><%= image_tag("caos_logo.png") %></td>
-    <td width="50"></td>
-    <td><p>Follow us!</p></td>
-    <td>
-	  <span>		
-	  <%=link_to(image_tag("facebook.png", :height => '80', :width => '80'), "http://www.facebook.com/pages/Unisex-hairmake-Caos/446876805356728",  :target => '_blank') %>		
-	  </span>
-	  <span>
-	  <%=link_to(image_tag("twitter.png", :height => '80', :width => '80'), "https://twitter.com/CAOS_1999",  :target => '_blank') %>
-      </span>
-	</td>
-	<td width="20"></td>
-  </table>
+<div id="page-header" class="clearfix">
+  <h1>
+    <a href="/">unisex hairmake CAOS</a>
+  </h1>
+  <div class="sns-buttons clearfix">
+    <div class="sns-buttons-label">Foolow us!</div>
+    <%= link_to 'facebook', 'http://www.facebook.com/pages/Unisex-hairmake-Caos/446876805356728', { class: 'sns-buttons-facebook', target: '_blank' } %>
+    <%= link_to 'twitter', 'https://twitter.com/CAOS_1999', { class: 'sns-buttons-twitter', target: '_blank' } %>
+  </div>
 </div>
-	
+
 <div id="clear-block"></div>
+<br/>
 
-<br/>	
-
-<div id="page-menu" style="float:left;">
-	
-  <% i = 0 %>
-  <% 8.times do %>
-    <% i += 1 %>
-    <% if i == 1 %>
-      <%=link_to(image_tag("menu/#{format("%02d",i)}.png", :alt => "", :height => '40', :width => '274')) %>
-    <% else %>
-      <%=link_to(image_tag("menu/#{format("%02d",i)}.png", :alt => "", :height => '40', :width => '274'), "##{format("%02d",i)}", :id => "about") %>
-    <% end %>
+<div id="page-menu">
+  <% (1..7).each do |n| %>
+    <%= link_to image_tag("menu/0#{ n }.png", height: 40, width: '274'), (n == 1 ? '/' : "#section0#{ n }"), id: 'about' %>
     <br/>
   <% end %>
-	
 </div>
 
 <div id="maximage2" style="float:center;">
@@ -43,7 +27,7 @@
 </div>
 
 <div id="container">
-  <div class="section" id="02">
+  <div class="section" id="section02">
     <h3>
       <%= image_tag("menu/02.png", :height => '40', :width => '274') %>
     </h3>
@@ -63,7 +47,7 @@
 	<br/>
   </div>
 
-<div class="section" id="03">
+<div class="section" id="section03">
   <h3>
     <%= image_tag("menu/03.png", :height => '40', :width => '274') %>
   </h3>
@@ -106,7 +90,7 @@
   <br/>		
 </div>
 
-<div class="section" id="04">
+<div class="section" id="section04">
   <h3>
     <%= image_tag("menu/04.png", :height => '40', :width => '274') %>
   </h3>		
@@ -127,7 +111,7 @@
   <br/>				
 </div>
 
-<div class="section" id="05">
+<div class="section" id="section05">
   <h3>
     <%= image_tag("menu/05.png", :height => '40', :width => '274') %>
   </h3>		
@@ -173,7 +157,7 @@
   });
 </script>
 
-<div class="section" id="06">
+<div class="section" id="section06">
   <h3>
     <%= image_tag("menu/06.png", :height => '40', :width => '274') %>
   </h3>
@@ -184,7 +168,7 @@
   <br/>		
 </div>
 
-<div class="section" id="07">
+<div class="section" id="section07">
   <h3>
     <%= image_tag("menu/07.png", :height => '40', :width => '274') %>
   </h3>	
@@ -213,7 +197,7 @@
   <br/>		
 </div>
 	
-<div class="section" id="08">
+<div class="section" id="section08">
   <h3>
     <%= image_tag("menu/08.png", :height => '40', :width => '274') %>
   </h3>
