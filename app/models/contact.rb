@@ -4,7 +4,7 @@ class Contact
   include ActiveModel::Conversion
   extend ActiveModel::Naming
 
-  attr_accessor :name, :email, :tel, :text
+  attr_accessor :name, :email, :tel, :datetime, :text
   validates :name, :email, :text, presence: true
 
   def initialize(attributes = {})

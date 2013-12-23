@@ -5,7 +5,7 @@
 <div id="container">
 	<div class='section'>
 		<p class="gold">ご予約の方は必要事項（お名前、メールアドレス、メモは必須）を記入の上、送信をお願い致します。<br>
-		※メモ欄に予約の日時やご要望をご記入下さい。</p>
+		※メモ欄にご要望等を具体的にご記入下さい。</p>
 	  <dl>	
 		<dt><p class="normal">お名前*</p></dt>
 		<dd><input id="contact_name" name="contact[name]" required="required" size="55" type="text" /></dd>
@@ -16,9 +16,13 @@
 		<dt><p class="normal">お電話番号</p></dt>
 		<dd><input id="contact_tel" name="contact[tel]" size="55" type="text" /></dd>
 
+		<dt><p class="normal">予約日時</p></dt>
+		<dd><input id="contact_datetime" name="contact[datetime]" size="55" type="text"></dd>
+
 		<dt><p class="normal">メモ*</p></dt>
 		<dd><textarea cols="40" id="contact_text" name="contact[text]" required="required" rows="8"></textarea></dd>
 	  </dl>
+	
 	</div>
 
 	<div class='buttons'><input class="button" name="commit" type="submit" value="送信する" />
@@ -29,6 +33,12 @@
     </div>
 
 </div>
+
+<script type="text/javascript">
+$(function(){
+  $('#contact_datetime').datetimepicker(dtp_option);
+});
+</script>
 
 <% end %>
 
