@@ -5,7 +5,7 @@ class Contact
   extend ActiveModel::Naming
 
   attr_accessor :name, :email, :tel, :datetime, :text
-  validates :name, :email, :text, presence: true
+  validates :name, :email, :datetime, :text, presence: true
 
   def initialize(attributes = {})
     if attributes
