@@ -143,29 +143,64 @@
   <%=link_to(image_tag("topmenu.png", :height => '60', :width => '60', :align => 'right'), "#home", :id => "home") %>
   <br/>		
 </div>
+
+<div class="advertisement" id="advertisement01">
+	<p class="black">9月 15日でCAOSは15周年を迎えます！！
+
+	これまでの15年は、本当に多くの方々に支えて頂きました。
+
+	私達スタッフ一同感謝の気持ちでいっぱいです。
+
+	本当にどうもありがとうございます！
 	
+	そこで！
+
+	CAOSでは、皆様への感謝の気持ちを込めまして
+
+	とってもステキなプレゼントをご用意させて頂きました！
+
+	9月 13日(土) 14日(日) 15日(月) の3日間
+
+	HPやブログ・Facebook・Twitter
+
+	をご覧になった全てのお客様限定で
+
+	なんと！
+
+	¥1,500の金券をプレゼントさせて頂きます！！</br>
+	
+	<%= link_to 'facebook', 'http://www.facebook.com/pages/Unisex-hairmake-Caos/446876805356728', { class: 'sns-buttons-facebook', target: '_blank' } %>
+  <%= link_to 'twitter', 'https://twitter.com/CAOS_1999', { class: 'sns-buttons-twitter', target: '_blank' } %>
+
+</p>
+</div>
+
 <script type="text/javascript" charset="utf-8">
   $(document).ready(function(){		
-    
     $('a[href^=#home]').click(function(){
-	  var speed = 700;
-	  var p = 0;
-	  $('html,body').animate({scrollTop:p}, speed, 'swing');
+	    var speed = 700;
+	    var p = 0;
+	    $('html,body').animate({scrollTop:p}, speed, 'swing');
 	    return false;
-	});
+	  });
 		
 　　　　$('a[href^=#]').click(function(){
-	  var speed = 700;
-	　　var i = $('a[href^=#]').index(this);
-	  var p = $(".section").eq(i).offset().top;		
-	  $('html,body').animate({scrollTop:p}, speed, 'swing');
-	  return false;
-	});
-	$(".fancybox").fancybox({
-	  openEffect	: 'none',
-	　　closeEffect	: 'none'
-　　　　});
+	    var speed = 700;
+	　　  var i = $('a[href^=#]').index(this);
+	    var p = $(".section").eq(i).offset().top;		
+	    $('html,body').animate({scrollTop:p}, speed, 'swing');
+	    return false;
+	  });
+
+	  $(".fancybox").fancybox({
+	    openEffect	: 'none',
+	　　  closeEffect	: 'none'
+　　　 });
+
+    $.fancybox.open($('.advertisement'));
+
   });
+
 </script>
 
 <div class="section" id="section06">
