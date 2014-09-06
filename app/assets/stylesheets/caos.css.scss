@@ -82,6 +82,14 @@ box-shadow:0 1px 4px rgba(0,0,0,0.3);
   line-height: 35px;
   font-size: 15px;
 }
+.advertisement a.black {
+  color: black;
+  font-weight: bold;
+}
+.advertisement a:hover {
+  color: #48D1CC;
+}
+
 
 #maximage {
   left: 0;
